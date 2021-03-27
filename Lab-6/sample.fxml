@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="30.0" prefHeight="50.0" prefWidth="700.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="800.0" spacing="40.0">
+               <children>
+                  <TextField fx:id="shapeSizeHeight" prefHeight="26.0" prefWidth="96.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="shapeSizeWidth" prefHeight="26.0" prefWidth="125.0" />
+                  <TextField prefHeight="26.0" prefWidth="87.0" />
+                  <ColorPicker />
+               </children>
+            </HBox>
+         </children></VBox>
+      <Label layoutX="378.0" prefHeight="30.0" prefWidth="56.0" text="Top" />
+      <Label layoutX="69.0" prefHeight="30.0" prefWidth="76.0" text="Height" />
+      <Label layoutX="225.0" prefHeight="30.0" prefWidth="67.0" text="Width" />
+      <HBox layoutX="50.0" layoutY="536.0" prefHeight="50.0" prefWidth="700.0" spacing="150.0">
+         <children>
+            <Button mnemonicParsing="false" text="Load" />
+            <Button mnemonicParsing="false" text="Save" />
+            <Button mnemonicParsing="false" text="Reset" />
+            <Button mnemonicParsing="false" text="Exit" />
+         </children>
+      </HBox>
+      <Canvas fx:id="canvas" height="445.0" layoutX="-1.0" layoutY="80.0" width="800.0" />
+
+   </children>
+</Pane>
